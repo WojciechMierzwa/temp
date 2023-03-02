@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styleSide.css" />
+</head>
+    <body>
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="https://student.ans-elblag.pl/~20858/Strona/home.html">Home</a>
+            <a href="http://student.ans-elblag.pl/~20858/Strona/Lotto/index.html">Lotto</a>
+          <a href="http://student.ans-elblag.pl/~20858/Strona/flappybird/flappybird.html">Flappy Bird</a>
+          <a href="http://student.ans-elblag.pl/~20858/Strona/whackamole/whackamole.html">Whack A Mole</a>
+          </div>
+          
+          
+          <div id="main">
+            <button class="openbtn" onclick="openNav()">☰</button>  
+          </div>
+          <script>
+            function openNav() {
+              document.getElementById("mySidebar").style.width = "250px";
+              document.getElementById("main").style.marginLeft = "250px";
+            }
+            
+            function closeNav() {
+              document.getElementById("mySidebar").style.width = "0";
+              document.getElementById("main").style.marginLeft= "0";
+            }
+            </script>
+    <canvas id="canvas1"></canvas>
+    <img id="playerImage" src="./images/player.png">
+    <img id="backgroundImage" src="./images/background_single.png">
+    <img id="enemyImage" src="./images/enemy_1.png">
+    
+    <script src="./js_back/script.js"></script>
+</body>
+</html>
